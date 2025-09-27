@@ -11,7 +11,11 @@ tags:
 
 ## Corrected Van Paemel model
 
-$\tau(k) \ge 0$ かつ $c \le 0$ のとき、
+### Case 1
+
+$\tau(k) \ge 0$ かつ $c \le 0$ のとき、つまり、基準エッジが先行していて、次の基準エッジまでに分周エッジが間に合わない場合。元のVan Paemelの論文におけるCase 1に対応する。
+
+![Case 1](images/cppll_2nd_case1.png)
 
 $$
 \begin{align}
@@ -19,15 +23,23 @@ $$
 \end{align}
 $$
 
-$\tau(k) \ge 0$ かつ $c > 0$ のとき、
+### Case 2
+
+$\tau(k) \ge 0$ かつ $c > 0$ のとき、つまり、基準エッジが先行していて、次の基準エッジまでに分周エッジが間に合う場合。元のVan Paemelの論文におけるCase 3に対応する。
+
+![Case 2](images/cppll_2nd_case2.png)
 
 $$
 \begin{align}
-  \tau(k+1) = \frac{1}{K_e v(k) + \omega_{vco}^{frec}} - T + (\tau(k) \pmod{T})
+  \tau(k+1) = \frac{N}{f_\text{vco}} - T + (\tau(k) \bmod{T})
 \end{align}
 $$
 
-$\tau(k) < 0$ かつ $l_b \le T$ のとき、
+### Case 3
+
+$\tau(k) < 0$ かつ $l_b \le T$ のとき、つまり、分周エッジが先行していて、次の基準エッジまでに分周エッジが間に合う場合。元のVan Paemelの論文におけるCase 2に対応する。
+
+![Case 3](images/cppll_2nd_case3.png)
 
 $$
 \begin{align}
@@ -35,7 +47,11 @@ $$
 \end{align}
 $$
 
-$\tau(k) < 0$ かつ $l_b > T$ のとき、
+### Case 4
+
+$\tau(k) < 0$ かつ $l_b > T$ のとき、つまり、分周エッジが先行していて、次の基準エッジまでに分周エッジが間に合わない場合。元のVan Paemelの論文におけるCase 6に対応する。
+
+![Case 4](images/cppll_2nd_case4.png)
 
 $$
 \begin{align}
@@ -47,20 +63,23 @@ $$
 
 $$
 \begin{align*}
-  &a = \frac{K_v I_p}{2C} \\
-  &b = \omega_\text{vco}(k) + K_v I_p R_2 \\
-  &c = (T - (\tau(k) \pmod T))\times\omega_\text{vco}(k)  - 1 \\
-  &l_b = \frac{1-S l_a}{\omega_\text{vco}(k)} \\
-  &d = S l_a + T \omega_\text{vco}(k)  - 1 \\
-  &S l_a = S l_k \pmod 1 \\
-  &S l_k = -(\omega_\text{vco}(k) - I_p R_2 K_v)\tau(k) + K_v I_p \dfrac{\tau(k)^2}{2C}
+  &f_\text{vco} = K_\text{vco} v(k) + f_0 \\
+  &a = {K_\text{vco} I_\text{cp}}/{2C_1} \\
+  &b = f_\text{vco}+ K_\text{vco} I_\text{cp} R_1 \\
+  &c = f_\text{vco} (T - (\tau(k) \bmod T))  - N \\
+  &l_b = ({N - Sl_a})/{f_\text{vco}} \\
+  &Sl_a = Sl_k \bmod N \\
+  &Sl_k = -(f_\text{vco} - I_\text{cp} R_1 K_\text{vco})\tau(k) + K_\text{vco} I_\text{cp} {\tau(k)^2}/{2C_1} \\
+  &d = Sl_a + f_\text{vco} T - N
 \end{align*}
 $$
 
-電圧の更新式は、
+### 電圧の更新式
+
+前述のすべての場合において、
 
 $$
 \begin{align}
-  v(k+1) = v(k) + \frac{I_p}{C}\tau(k+1)
+  v(k+1) = v(k) + \frac{I_\text{cp}}{C_1}\tau(k+1)
 \end{align}
 $$
