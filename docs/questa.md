@@ -32,7 +32,7 @@ exit
 
 ## 波形保存の例
 
-```
+```title="options.txt"
 +acc
 -do "add log -r *; run -all;"
 test.sv
