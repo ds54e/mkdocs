@@ -44,3 +44,10 @@ extra:
   analytics:
     provider: google
     property: G-D8S4DZEP6K
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/ds54e
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@ds54e
+    - icon: fontawesome/brands/github
+      link: https://github.com/ds54e
