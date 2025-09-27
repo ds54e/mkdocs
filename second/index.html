@@ -366,6 +366,57 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Corrected Van Paemel model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      電圧の更新式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -438,6 +489,57 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Corrected Van Paemel model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      電圧の更新式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -474,25 +576,33 @@
 <li><a href="https://arxiv.org/abs/1810.02609">Comment on "Analysis of a Charge-Pump PLL: A New Model" by M. van Paemel  (2019)</a></li>
 </ul>
 <h2 id="corrected-van-paemel-model">Corrected Van Paemel model</h2>
-<p><span class="arithmatex">\(\tau(k) \ge 0\)</span> かつ <span class="arithmatex">\(c \le 0\)</span> のとき、</p>
+<h3 id="case-1">Case 1</h3>
+<p><span class="arithmatex">\(\tau(k) \ge 0\)</span> かつ <span class="arithmatex">\(c \le 0\)</span> のとき、つまり、基準エッジが先行していて、次の基準エッジまでに分周エッジが間に合わない場合。元のVan Paemelの論文におけるCase 1に対応する。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/cppll_2nd_case1.png" data-desc-position="bottom"><img alt="Case 1" src="../images/cppll_2nd_case1.png"></a></p>
 <div class="arithmatex">\[
 \begin{align}
   \tau(k+1) = \frac{-b+\sqrt{b^2-4ac}}{2a}
 \end{align}
 \]</div>
-<p><span class="arithmatex">\(\tau(k) \ge 0\)</span> かつ <span class="arithmatex">\(c &gt; 0\)</span> のとき、</p>
+<h3 id="case-2">Case 2</h3>
+<p><span class="arithmatex">\(\tau(k) \ge 0\)</span> かつ <span class="arithmatex">\(c &gt; 0\)</span> のとき、つまり、基準エッジが先行していて、次の基準エッジまでに分周エッジが間に合う場合。元のVan Paemelの論文におけるCase 3に対応する。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/cppll_2nd_case2.png" data-desc-position="bottom"><img alt="Case 2" src="../images/cppll_2nd_case2.png"></a></p>
 <div class="arithmatex">\[
 \begin{align}
-  \tau(k+1) = \frac{1}{K_e v(k) + \omega_{vco}^{frec}} - T + (\tau(k) \pmod{T})
+  \tau(k+1) = \frac{N}{f_\text{vco}} - T + (\tau(k) \bmod{T})
 \end{align}
 \]</div>
-<p><span class="arithmatex">\(\tau(k) &lt; 0\)</span> かつ <span class="arithmatex">\(l_b \le T\)</span> のとき、</p>
+<h3 id="case-3">Case 3</h3>
+<p><span class="arithmatex">\(\tau(k) &lt; 0\)</span> かつ <span class="arithmatex">\(l_b \le T\)</span> のとき、つまり、分周エッジが先行していて、次の基準エッジまでに分周エッジが間に合う場合。元のVan Paemelの論文におけるCase 2に対応する。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/cppll_2nd_case3.png" data-desc-position="bottom"><img alt="Case 3" src="../images/cppll_2nd_case3.png"></a></p>
 <div class="arithmatex">\[
 \begin{align}
   \tau(k+1) = l_b - T
 \end{align}
 \]</div>
-<p><span class="arithmatex">\(\tau(k) &lt; 0\)</span> かつ <span class="arithmatex">\(l_b &gt; T\)</span> のとき、</p>
+<h3 id="case-4">Case 4</h3>
+<p><span class="arithmatex">\(\tau(k) &lt; 0\)</span> かつ <span class="arithmatex">\(l_b &gt; T\)</span> のとき、つまり、分周エッジが先行していて、次の基準エッジまでに分周エッジが間に合わない場合。元のVan Paemelの論文におけるCase 6に対応する。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/cppll_2nd_case4.png" data-desc-position="bottom"><img alt="Case 4" src="../images/cppll_2nd_case4.png"></a></p>
 <div class="arithmatex">\[
 \begin{align}
   \tau(k+1) = \frac{-b+\sqrt{b^2-4ad}}{2a}
@@ -501,19 +611,21 @@
 <p>ただし、</p>
 <div class="arithmatex">\[
 \begin{align*}
-  &amp;a = \frac{K_v I_p}{2C} \\
-  &amp;b = \omega_\text{vco}(k) + K_v I_p R_2 \\
-  &amp;c = (T - (\tau(k) \pmod T))\times\omega_\text{vco}(k)  - 1 \\
-  &amp;l_b = \frac{1-S l_a}{\omega_\text{vco}(k)} \\
-  &amp;d = S l_a + T \omega_\text{vco}(k)  - 1 \\
-  &amp;S l_a = S l_k \pmod 1 \\
-  &amp;S l_k = -(\omega_\text{vco}(k) - I_p R_2 K_v)\tau(k) + K_v I_p \dfrac{\tau(k)^2}{2C}
+  &amp;f_\text{vco} = K_\text{vco} v(k) + f_0 \\
+  &amp;a = {K_\text{vco} I_\text{cp}}/{2C_1} \\
+  &amp;b = f_\text{vco}+ K_\text{vco} I_\text{cp} R_1 \\
+  &amp;c = f_\text{vco} (T - (\tau(k) \bmod T))  - N \\
+  &amp;l_b = ({N - Sl_a})/{f_\text{vco}} \\
+  &amp;Sl_a = Sl_k \bmod N \\
+  &amp;Sl_k = -(f_\text{vco} - I_\text{cp} R_1 K_\text{vco})\tau(k) + K_\text{vco} I_\text{cp} {\tau(k)^2}/{2C_1} \\
+  &amp;d = Sl_a + f_\text{vco} T - N
 \end{align*}
 \]</div>
-<p>電圧の更新式は、</p>
+<h3 id="_2">電圧の更新式</h3>
+<p>前述のすべての場合において、</p>
 <div class="arithmatex">\[
 \begin{align}
-  v(k+1) = v(k) + \frac{I_p}{C}\tau(k+1)
+  v(k+1) = v(k) + \frac{I_\text{cp}}{C_1}\tau(k+1)
 \end{align}
 \]</div>
 
