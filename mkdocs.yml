@@ -39,3 +39,8 @@ extra_javascript:
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/custom.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-D8S4DZEP6K
