@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ds54e.github.io/mkdocs/</loc>
-         <lastmod>2025-09-27</lastmod>
+         <lastmod>2025-09-28</lastmod>
     </url>
     <url>
          <loc>https://ds54e.github.io/mkdocs/bbpll/</loc>
-         <lastmod>2025-09-27</lastmod>
+         <lastmod>2025-09-28</lastmod>
     </url>
     <url>
          <loc>https://ds54e.github.io/mkdocs/dsim/</loc>
-         <lastmod>2025-09-27</lastmod>
+         <lastmod>2025-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://ds54e.github.io/mkdocs/paemel/</loc>
+         <lastmod>2025-09-28</lastmod>
+    </url>
+    <url>
+         <loc>https://ds54e.github.io/mkdocs/paemel_comparison/</loc>
+         <lastmod>2025-09-28</lastmod>
     </url>
     <url>
          <loc>https://ds54e.github.io/mkdocs/questa/</loc>
-         <lastmod>2025-09-27</lastmod>
-    </url>
-    <url>
-         <loc>https://ds54e.github.io/mkdocs/second/</loc>
-         <lastmod>2025-09-27</lastmod>
+         <lastmod>2025-09-28</lastmod>
     </url>
     <url>
          <loc>https://ds54e.github.io/mkdocs/tags/</loc>
-         <lastmod>2025-09-27</lastmod>
+         <lastmod>2025-09-28</lastmod>
     </url>
 </urlset>
