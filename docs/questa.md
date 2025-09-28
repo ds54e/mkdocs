@@ -5,6 +5,8 @@ tags:
   - Questa
 ---
 
+みんな大好き`ModelSim-ASE`の後継版、`Questa-FSE`を試しに使ってみるテスト。リッチなGUIとデバッガがほしいときは、DSimよりもこっちのほうが便利かもしれなくなくもない。
+
 ## Questa-Intel FPGA Starter Editionの特徴
 - 無償で利用可能。
 - ライセンスの取得の手続きがちょっとめんどい。

@@ -5,7 +5,9 @@ tags:
   - DSim
 ---
 
-## Altair DSimの特徴
+[某RTL界隈で話題沸騰中のVerilog simulator](https://x.com/taichi600730/status/1788228372910505988 )、Altair DSimを試しに使ってみるテスト。趣味で無料で使えるシミュレータの中では、これが現状最強な気がする。
+
+## DSimの特徴
 - 個人向けの1ジョブ限定の無償ライセンスが利用可能。
 - 追加の有償ライセンスなしでSystemVerilogのすべての機能が利用可能。
     - SystemVerilog assertion (SVA)

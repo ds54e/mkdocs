@@ -4,7 +4,7 @@ tags:
   - PLL
 ---
 
-## 元論文
+下記の論文を読んで、2次CPPLLの非線形離散時間モデルの式を整理してみるテスト。
 
 - [Analysis of a charge-pump PLL: a new model (1994)](https://ieeexplore.ieee.org/document/297861)
 - [Comment on "Analysis of a Charge-Pump PLL: A New Model" by M. van Paemel  (2019)](https://arxiv.org/abs/1810.02609)

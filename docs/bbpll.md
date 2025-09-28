@@ -4,6 +4,8 @@ tags:
   - PLL
 ---
 
+ガチ目の技術系解説 × ゆるふわボイスロイド劇場、の掛け算をためしてみるテスト。大学の講義スライドを並べただけの紙芝居動画みたいにならないように色々と試行錯誤した結果、最終的に自分の好きなものを詰め込みまくっただけの何かよくわかない動画に仕上がりました。でもゆかりさんが可愛いからいいじゃない。[ヒンメルはもういないじゃない](https://www.youtube.com/shorts/zDW4OtNMXlo)。
+
 ## 1時間でわかる Digital Bang-Bang PLL
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qTBm0yb9omk?si=vrF3lzbzpJZgox4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
