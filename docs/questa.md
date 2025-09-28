@@ -2,7 +2,7 @@
 title: Questaの使い方
 tags:
   - SystemVerilog
-  - Questa
+  - Simulator
 ---
 
 みんな大好き`ModelSim-ASE`の後継版、`Questa-FSE`を試しに使ってみるテスト。リッチなGUIとデバッガがほしいときは、DSimよりもこっちのほうが便利かもしれなくなくもない。

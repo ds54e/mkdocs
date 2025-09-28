@@ -2,7 +2,7 @@
 title: DSimの使い方
 tags:
   - SystemVerilog
-  - DSim
+  - Simulator
 ---
 
 [某RTL界隈で話題沸騰中のVerilog simulator](https://x.com/taichi600730/status/1788228372910505988 )、Altair DSimを試しに使ってみるテスト。趣味で無料で使えるシミュレータの中では、これが現状最強な気がする。

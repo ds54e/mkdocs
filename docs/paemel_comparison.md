@@ -2,6 +2,7 @@
 title: 2次CPPLLモデルの比較
 tags:
   - PLL
+  - SystemVerilog
 ---
 
 Kuznetsov N.V.が2019年に発表した、[Van Paemelの2次CPPLLモデルの問題点の修正に関する論文](https://arxiv.org/abs/1810.02609)の式が、本当に2次CPPLLの動作を正確に表現できているのか確認してみるテスト。赤線が一般的なCPPLLの構造モデル、緑線が論文の提示している数式モデルです。赤線と緑線が一致しているので、なんとなく大丈夫そう。
